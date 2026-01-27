@@ -1,0 +1,1459 @@
+
+Gurobi 12.0.0 (linux64) logging started Wed 20 Nov 2024 05:37:11 PM UTC
+
+Set parameter LogFile to value "tsn_bounding10.log"
+Set parameter MIPFocus to value 1
+Set parameter Cuts to value 2
+Gurobi Optimizer version 12.0.0 build v12.0.0rc1 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: 13th Gen Intel(R) Core(TM) i9-13900K, instruction set [SSE2|AVX|AVX2]
+Thread count: 32 physical cores, 32 logical processors, using up to 32 threads
+
+Non-default parameters:
+MIPFocus  1
+Cuts  2
+LogToConsole  0
+
+Optimize a model with 121712 rows, 4445 columns and 257436 nonzeros
+Model fingerprint: 0x24451ad7
+Variable types: 0 continuous, 4445 integer (4445 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 4e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+00]
+
+Loaded user MIP start with objective 15
+
+Presolve removed 89696 rows and 366 columns
+Presolve time: 0.77s
+Presolved: 32016 rows, 4079 columns, 115256 nonzeros
+Variable types: 0 continuous, 4079 integer (4079 binary)
+Root relaxation presolved: 32016 rows, 4079 columns, 115256 nonzeros
+
+
+Root relaxation: objective 1.770588e+01, 2682 iterations, 0.23 seconds (0.75 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   17.70588    0   73   15.00000   17.70588  18.0%     -    1s
+     0     0   17.70000    0   68   15.00000   17.70000  18.0%     -    1s
+H    0     0                      16.0000000   17.70000  10.6%     -    1s
+H    0     0                      17.0000000   17.70000  4.12%     -    1s
+
+Cutting planes:
+  Gomory: 4
+  Lift-and-project: 11
+  Cover: 1
+  Zero half: 10
+
+Explored 1 nodes (3010 simplex iterations) in 1.25 seconds (2.85 work units)
+Thread count was 32 (of 32 available processors)
+
+Solution count 3: 17 16 15 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.700000000000e+01, best bound 1.700000000000e+01, gap 0.0000%
+
+Gurobi 12.0.0 (linux64) logging started Wed 20 Nov 2024 05:37:31 PM UTC
+
+Set parameter LogFile to value "tsn_bounding10.log"
+Set parameter MIPFocus to value 1
+Set parameter Cuts to value 2
+Gurobi Optimizer version 12.0.0 build v12.0.0rc1 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: 13th Gen Intel(R) Core(TM) i9-13900K, instruction set [SSE2|AVX|AVX2]
+Thread count: 32 physical cores, 32 logical processors, using up to 32 threads
+
+Non-default parameters:
+MIPFocus  1
+Cuts  2
+LogToConsole  0
+
+Optimize a model with 425239 rows, 8538 columns and 878426 nonzeros
+Model fingerprint: 0x0f322cfa
+Variable types: 0 continuous, 8538 integer (8538 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 4e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+00]
+
+Loaded user MIP start with objective 20
+
+Presolve removed 342146 rows and 1189 columns
+Presolve time: 2.99s
+Presolved: 83093 rows, 7349 columns, 282511 nonzeros
+Variable types: 0 continuous, 7349 integer (7349 binary)
+Root relaxation presolved: 7347 rows, 90440 columns, 289858 nonzeros
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+   21437    9.3331621e+01   0.000000e+00   5.611372e+05      5s
+   58617    2.8924725e+01   0.000000e+00   8.851941e+02     10s
+   65908    2.8000000e+01   0.000000e+00   0.000000e+00     11s
+   65908    2.8000000e+01   0.000000e+00   0.000000e+00     11s
+   65908    2.8000000e+01   0.000000e+00   0.000000e+00     11s
+
+Root relaxation: objective 2.800000e+01, 65908 iterations, 7.83 seconds (16.53 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   28.00000    0   64   20.00000   28.00000  40.0%     -   11s
+H    0     0                      24.0000000   28.00000  16.7%     -   11s
+H    0     0                      27.0000000   28.00000  3.70%     -   11s
+
+Cutting planes:
+  Gomory: 1
+  Lift-and-project: 15
+  Cover: 1
+  Clique: 5
+  Zero half: 9
+
+Explored 1 nodes (67048 simplex iterations) in 11.49 seconds (25.29 work units)
+Thread count was 32 (of 32 available processors)
+
+Solution count 3: 27 24 20 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.700000000000e+01, best bound 2.700000000000e+01, gap 0.0000%
+
+Gurobi 12.0.0 (linux64) logging started Wed 20 Nov 2024 05:38:28 PM UTC
+
+Set parameter LogFile to value "tsn_bounding10.log"
+Set parameter MIPFocus to value 1
+Set parameter Cuts to value 2
+Gurobi Optimizer version 12.0.0 build v12.0.0rc1 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: 13th Gen Intel(R) Core(TM) i9-13900K, instruction set [SSE2|AVX|AVX2]
+Thread count: 32 physical cores, 32 logical processors, using up to 32 threads
+
+Non-default parameters:
+MIPFocus  1
+Cuts  2
+LogToConsole  0
+
+Optimize a model with 580825 rows, 9387 columns and 1191878 nonzeros
+Model fingerprint: 0x12f6853c
+Variable types: 0 continuous, 9387 integer (9387 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 4e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+00]
+
+User MIP start did not produce a new incumbent solution
+User MIP start violates constraint ConflictJobs15_16 by 1.000000000
+
+Presolve removed 411824 rows and 698 columns
+Presolve time: 3.93s
+Presolved: 169001 rows, 8689 columns, 502855 nonzeros
+Variable types: 0 continuous, 8689 integer (8689 binary)
+Found heuristic solution: objective 5.0000000
+Root relaxation presolved: 8687 rows, 177688 columns, 511542 nonzeros
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+    6684    1.9247951e+02   0.000000e+00   2.834727e+05      5s
+   44267    2.5780712e+01   0.000000e+00   2.952109e+06     10s
+   64007    2.5149934e+01   0.000000e+00   1.108216e+06     15s
+   85007    2.4989451e+01   0.000000e+00   2.525203e+05     20s
+  109367    2.4888339e+01   0.000000e+00   5.948043e+04     25s
+  142127    2.3531847e+01   0.000000e+00   3.742561e+02     30s
+  150374    2.3000000e+01   0.000000e+00   0.000000e+00     31s
+  150374    2.3000000e+01   0.000000e+00   0.000000e+00     31s
+  150374    2.3000000e+01   0.000000e+00   0.000000e+00     31s
+
+Root relaxation: objective 2.300000e+01, 150374 iterations, 27.20 seconds (58.84 work units)
+Another try with MIP start
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   23.00000    0   53    5.00000   23.00000   360%     -   31s
+H    0     0                      18.0000000   23.00000  27.8%     -   31s
+H    0     0                      19.0000000   23.00000  21.1%     -   32s
+H    0     0                      22.0000000   23.00000  4.55%     -   32s
+     0     0   23.00000    0   35   22.00000   23.00000  4.55%     -   32s
+
+Explored 1 nodes (152534 simplex iterations) in 32.64 seconds (71.17 work units)
+Thread count was 32 (of 32 available processors)
+
+Solution count 4: 22 19 18 5 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.200000000000e+01, best bound 2.200000000000e+01, gap 0.0000%
+
+Gurobi 12.0.0 (linux64) logging started Wed 20 Nov 2024 05:39:25 PM UTC
+
+Set parameter LogFile to value "tsn_bounding10.log"
+Set parameter MIPFocus to value 1
+Set parameter Cuts to value 2
+Gurobi Optimizer version 12.0.0 build v12.0.0rc1 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: 13th Gen Intel(R) Core(TM) i9-13900K, instruction set [SSE2|AVX|AVX2]
+Thread count: 32 physical cores, 32 logical processors, using up to 32 threads
+
+Non-default parameters:
+MIPFocus  1
+Cuts  2
+LogToConsole  0
+
+Optimize a model with 254714 rows, 6294 columns and 529798 nonzeros
+Model fingerprint: 0xb1696edc
+Variable types: 0 continuous, 6294 integer (6294 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 4e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+00]
+
+Loaded user MIP start with objective 24
+
+Presolve removed 165299 rows and 16 columns
+Presolve time: 1.53s
+Presolved: 89415 rows, 6278 columns, 270528 nonzeros
+Variable types: 0 continuous, 6278 integer (6278 binary)
+Root relaxation presolved: 6278 rows, 95693 columns, 276806 nonzeros
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+   35876    2.9127257e+01   0.000000e+00   5.699018e+05      5s
+   76237    2.7000000e+01   0.000000e+00   0.000000e+00     10s
+   76237    2.7000000e+01   0.000000e+00   0.000000e+00     10s
+
+Root relaxation: objective 2.700000e+01, 76237 iterations, 8.15 seconds (17.08 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   27.00000    0   20   24.00000   27.00000  12.5%     -    9s
+H    0     0                      25.0000000   27.00000  8.00%     -   10s
+H    0     0                      27.0000000   27.00000  0.00%     -   10s
+
+Cutting planes:
+  Gomory: 4
+  Lift-and-project: 5
+  Clique: 3
+  Zero half: 12
+
+Explored 1 nodes (77650 simplex iterations) in 10.24 seconds (21.58 work units)
+Thread count was 32 (of 32 available processors)
+
+Solution count 3: 27 25 24 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.700000000000e+01, best bound 2.700000000000e+01, gap 0.0000%
+
+Gurobi 12.0.0 (linux64) logging started Wed 20 Nov 2024 05:42:07 PM UTC
+
+Set parameter LogFile to value "tsn_bounding10.log"
+Set parameter MIPFocus to value 1
+Set parameter Cuts to value 2
+Gurobi Optimizer version 12.0.0 build v12.0.0rc1 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: 13th Gen Intel(R) Core(TM) i9-13900K, instruction set [SSE2|AVX|AVX2]
+Thread count: 32 physical cores, 32 logical processors, using up to 32 threads
+
+Non-default parameters:
+MIPFocus  1
+Cuts  2
+LogToConsole  0
+
+Optimize a model with 579641 rows, 9754 columns and 1190910 nonzeros
+Model fingerprint: 0x0581b65d
+Variable types: 0 continuous, 9754 integer (9754 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 4e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+00]
+
+User MIP start did not produce a new incumbent solution
+User MIP start violates constraint SourceConsSourceNode2 by 1.000000000
+
+Presolve removed 428513 rows and 1452 columns (presolve time = 5s)...
+Presolve removed 428512 rows and 1451 columns
+Presolve time: 5.44s
+Presolved: 151129 rows, 8303 columns, 466217 nonzeros
+Variable types: 0 continuous, 8303 integer (8303 binary)
+Found heuristic solution: objective 6.0000000
+Found heuristic solution: objective 7.0000000
+Root relaxation presolved: 8301 rows, 159430 columns, 474518 nonzeros
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.6620000e+03   0.000000e+00   1.616580e+05      6s
+   34112    1.5352420e+02   0.000000e+00   2.185416e+07     10s
+   59100    2.7007103e+01   0.000000e+00   2.039072e+06     15s
+   77870    2.6323440e+01   0.000000e+00   8.661986e+05     20s
+   97341    2.6120785e+01   0.000000e+00   7.876201e+05     25s
+  117519    2.6019081e+01   0.000000e+00   2.843675e+05     30s
+  141591    2.5954498e+01   0.000000e+00   3.122028e+05     35s
+  172035    2.5883625e+01   0.000000e+00   2.980540e+04     40s
+  192621    2.3326087e+01   0.000000e+00   0.000000e+00     43s
+  192621    2.3326087e+01   0.000000e+00   0.000000e+00     43s
+  192621    2.3326087e+01   0.000000e+00   0.000000e+00     43s
+
+Root relaxation: objective 2.332609e+01, 192621 iterations, 37.23 seconds (74.98 work units)
+Another try with MIP start
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   23.32609    0  114    7.00000   23.32609   233%     -   43s
+H    0     0                      15.0000000   23.32609  55.5%     -   43s
+H    0     0                      16.0000000   23.32609  45.8%     -   43s
+H    0     0                      18.0000000   23.32609  29.6%     -   43s
+H    0     0                      19.0000000   23.32609  22.8%     -   43s
+     0     0   22.48387    0  105   19.00000   22.48387  18.3%     -   45s
+     0     0   22.39474    0  122   19.00000   22.39474  17.9%     -   45s
+H    0     0                      20.0000000   22.27273  11.4%     -   46s
+     0     0   22.27273    0  108   20.00000   22.27273  11.4%     -   46s
+     0     0   22.27273    0  105   20.00000   22.27273  11.4%     -   46s
+     0     0   22.27273    0  105   20.00000   22.27273  11.4%     -   47s
+     0     0   22.27273    0   88   20.00000   22.27273  11.4%     -   48s
+     0     0   22.27273    0   91   20.00000   22.27273  11.4%     -   48s
+     0     0   22.27273    0   91   20.00000   22.27273  11.4%     -   48s
+     0     0   22.00000    0  114   20.00000   22.00000  10.0%     -   49s
+     0     0   22.00000    0  115   20.00000   22.00000  10.0%     -   49s
+     0     0   22.00000    0  110   20.00000   22.00000  10.0%     -   49s
+     0     0   22.00000    0  111   20.00000   22.00000  10.0%     -   49s
+     0     0   22.00000    0  107   20.00000   22.00000  10.0%     -   49s
+H    0     0                      21.0000000   22.00000  4.76%     -   52s
+     0     0   22.00000    0   34   21.00000   22.00000  4.76%     -   53s
+     0     0   22.00000    0   36   21.00000   22.00000  4.76%     -   53s
+     0     0   22.00000    0   44   21.00000   22.00000  4.76%     -   53s
+     0     0   22.00000    0   82   21.00000   22.00000  4.76%     -   54s
+     0     0   22.00000    0   91   21.00000   22.00000  4.76%     -   58s
+     0     0   22.00000    0  121   21.00000   22.00000  4.76%     -   81s
+     0     0   22.00000    0  101   21.00000   22.00000  4.76%     -   81s
+     0     0   22.00000    0  146   21.00000   22.00000  4.76%     -   82s
+     0     0   22.00000    0  128   21.00000   22.00000  4.76%     -   82s
+     0     0   22.00000    0  130   21.00000   22.00000  4.76%     -   83s
+     0     0   22.00000    0  137   21.00000   22.00000  4.76%     -   83s
+     0     0   22.00000    0  133   21.00000   22.00000  4.76%     -   83s
+     0     0   22.00000    0  128   21.00000   22.00000  4.76%     -   85s
+     0     0   22.00000    0  143   21.00000   22.00000  4.76%     -   85s
+     0     0   22.00000    0   54   21.00000   22.00000  4.76%     -   90s
+     0     0   22.00000    0   48   21.00000   22.00000  4.76%     -   91s
+     0     0   22.00000    0   34   21.00000   22.00000  4.76%     -   94s
+     0     2   22.00000    0   34   21.00000   22.00000  4.76%     -   96s
+    23     8   22.00000    7   57   21.00000   22.00000  4.76%   368  100s
+   127    18   22.00000   15   85   21.00000   22.00000  4.76%   291  105s
+   229    31   22.00000   20   90   21.00000   22.00000  4.76%   278  111s
+   346    30   22.00000   24   93   21.00000   22.00000  4.76%   287  116s
+   441    38   22.00000   27  153   21.00000   22.00000  4.76%   271  121s
+   573    30   22.00000   31   68   21.00000   22.00000  4.76%   277  126s
+   667    20   22.00000   35  118   21.00000   22.00000  4.76%   270  130s
+   757    16   22.00000   39  144   21.00000   22.00000  4.76%   264  135s
+   822     4 infeasible   43        21.00000   22.00000  4.76%   266  140s
+
+Cutting planes:
+  Gomory: 2
+  Cover: 1
+  Implied bound: 33
+  Clique: 20
+  Inf proof: 2
+  Zero half: 97
+  RLT: 45
+  Relax-and-lift: 54
+
+Explored 851 nodes (472121 simplex iterations) in 142.28 seconds (331.93 work units)
+Thread count was 32 (of 32 available processors)
+
+Solution count 9: 21 20 19 ... 6
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.100000000000e+01, best bound 2.100000000000e+01, gap 0.0000%
+
+Gurobi 12.0.0 (linux64) logging started Wed 20 Nov 2024 05:45:34 PM UTC
+
+Set parameter LogFile to value "tsn_bounding10.log"
+Set parameter MIPFocus to value 1
+Set parameter Cuts to value 2
+Gurobi Optimizer version 12.0.0 build v12.0.0rc1 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: 13th Gen Intel(R) Core(TM) i9-13900K, instruction set [SSE2|AVX|AVX2]
+Thread count: 32 physical cores, 32 logical processors, using up to 32 threads
+
+Non-default parameters:
+MIPFocus  1
+Cuts  2
+LogToConsole  0
+
+Optimize a model with 275733 rows, 6866 columns and 573594 nonzeros
+Model fingerprint: 0x106507e3
+Variable types: 0 continuous, 6866 integer (6866 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 4e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+00]
+
+Loaded user MIP start with objective 15
+
+Presolve removed 215473 rows and 1056 columns
+Presolve time: 1.99s
+Presolved: 60260 rows, 5810 columns, 202275 nonzeros
+Variable types: 0 continuous, 5810 integer (5810 binary)
+Root relaxation presolved: 5808 rows, 66068 columns, 208083 nonzeros
+
+
+Root relaxation: objective 1.930435e+01, 2067 iterations, 0.14 seconds (0.41 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   19.30435    0   80   15.00000   19.30435  28.7%     -    2s
+H    0     0                      16.0000000   19.30435  20.7%     -    2s
+H    0     0                      17.0000000   19.30435  13.6%     -    2s
+H    0     0                      18.0000000   19.12500  6.25%     -    2s
+     0     0   19.12500    0   79   18.00000   19.12500  6.25%     -    2s
+     0     0   19.12500    0   71   18.00000   19.12500  6.25%     -    3s
+     0     0   19.12500    0   75   18.00000   19.12500  6.25%     -    3s
+     0     0   19.07692    0   74   18.00000   19.07692  5.98%     -    3s
+     0     0   19.00000    0   68   18.00000   19.00000  5.56%     -    4s
+     0     0   19.00000    0   34   18.00000   19.00000  5.56%     -    5s
+
+Cutting planes:
+  Gomory: 2
+
+Explored 1 nodes (6637 simplex iterations) in 5.36 seconds (10.73 work units)
+Thread count was 32 (of 32 available processors)
+
+Solution count 4: 18 17 16 15 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.800000000000e+01, best bound 1.800000000000e+01, gap 0.0000%
+
+Gurobi 12.0.0 (linux64) logging started Wed 20 Nov 2024 05:45:57 PM UTC
+
+Set parameter LogFile to value "tsn_bounding10.log"
+Set parameter MIPFocus to value 1
+Set parameter Cuts to value 2
+Gurobi Optimizer version 12.0.0 build v12.0.0rc1 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: 13th Gen Intel(R) Core(TM) i9-13900K, instruction set [SSE2|AVX|AVX2]
+Thread count: 32 physical cores, 32 logical processors, using up to 32 threads
+
+Non-default parameters:
+MIPFocus  1
+Cuts  2
+LogToConsole  0
+
+Optimize a model with 299312 rows, 7227 columns and 622270 nonzeros
+Model fingerprint: 0xcf4593df
+Variable types: 0 continuous, 7227 integer (7227 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 4e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+00]
+
+Loaded user MIP start with objective 18
+
+Presolve removed 231868 rows and 1071 columns
+Presolve time: 2.11s
+Presolved: 67444 rows, 6156 columns, 231199 nonzeros
+Variable types: 0 continuous, 6156 integer (6156 binary)
+Root relaxation presolved: 6156 rows, 73600 columns, 237355 nonzeros
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+   33112    2.1047667e+01   0.000000e+00   3.449362e+05      5s
+   61237    2.0189189e+01   0.000000e+00   0.000000e+00      8s
+   61237    2.0189189e+01   0.000000e+00   0.000000e+00      8s
+
+Root relaxation: objective 2.018919e+01, 61237 iterations, 6.22 seconds (12.92 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   20.18919    0   83   18.00000   20.18919  12.2%     -    8s
+H    0     0                      20.0000000   20.18919  0.95%     -    8s
+     0     0   20.18919    0   83   20.00000   20.18919  0.95%     -    8s
+
+Explored 1 nodes (62232 simplex iterations) in 8.61 seconds (18.65 work units)
+Thread count was 32 (of 32 available processors)
+
+Solution count 2: 20 18 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.000000000000e+01, best bound 2.000000000000e+01, gap 0.0000%
+
+Gurobi 12.0.0 (linux64) logging started Wed 20 Nov 2024 05:47:46 PM UTC
+
+Set parameter LogFile to value "tsn_bounding10.log"
+Set parameter MIPFocus to value 1
+Set parameter Cuts to value 2
+Gurobi Optimizer version 12.0.0 build v12.0.0rc1 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: 13th Gen Intel(R) Core(TM) i9-13900K, instruction set [SSE2|AVX|AVX2]
+Thread count: 32 physical cores, 32 logical processors, using up to 32 threads
+
+Non-default parameters:
+MIPFocus  1
+Cuts  2
+LogToConsole  0
+
+Optimize a model with 567198 rows, 9782 columns and 1166274 nonzeros
+Model fingerprint: 0x3a3d3cdb
+Variable types: 0 continuous, 9782 integer (9782 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e+00, 4e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+00]
+
+Loaded user MIP start with objective 15
+
+Presolve removed 401809 rows and 669 columns (presolve time = 5s)...
+Presolve removed 401809 rows and 669 columns
+Presolve time: 5.44s
+Presolved: 165389 rows, 9113 columns, 499482 nonzeros
+Variable types: 0 continuous, 9113 integer (9113 binary)
+Root relaxation presolved: 9111 rows, 174500 columns, 508593 nonzeros
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    8.7400000e+02   0.000000e+00   5.266400e+04      6s
+   43816    1.3572340e+02   0.000000e+00   4.289960e+06     10s
+   77903    3.0501940e+01   0.000000e+00   1.581808e+07     15s
+   97672    2.8298058e+01   0.000000e+00   5.837246e+05     20s
+  116338    2.8100765e+01   0.000000e+00   4.785995e+05     25s
+  136468    2.7997739e+01   0.000000e+00   9.372668e+04     30s
+  161356    2.7922608e+01   0.000000e+00   2.041774e+04     35s
+  192832    2.6388352e+01   0.000000e+00   3.161786e+01     40s
+  197056    2.6294118e+01   0.000000e+00   0.000000e+00     41s
+  197056    2.6294118e+01   0.000000e+00   0.000000e+00     41s
+  197056    2.6294118e+01   0.000000e+00   0.000000e+00     41s
+
+Root relaxation: objective 2.629412e+01, 197056 iterations, 35.24 seconds (72.05 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   26.29412    0  114   15.00000   26.29412  75.3%     -   41s
+H    0     0                      18.0000000   26.29412  46.1%     -   41s
+H    0     0                      19.0000000   26.29412  38.4%     -   41s
+H    0     0                      20.0000000   26.29412  31.5%     -   42s
+H    0     0                      21.0000000   26.27273  25.1%     -   42s
+     0     0   26.00000    0  133   21.00000   26.00000  23.8%     -   43s
+H    0     0                      22.0000000   26.00000  18.2%     -   44s
+     0     0   26.00000    0  141   22.00000   26.00000  18.2%     -   44s
+     0     0   26.00000    0   97   22.00000   26.00000  18.2%     -   44s
+H    0     0                      24.0000000   26.00000  8.33%     -   49s
+     0     0   26.00000    0   34   24.00000   26.00000  8.33%     -   50s
+     0     0   26.00000    0   72   24.00000   26.00000  8.33%     -   55s
+     0     0   25.93103    0  104   24.00000   25.93103  8.05%     -   57s
+     0     0   25.87500    0   92   24.00000   25.87500  7.81%     -   60s
+
+Explored 1 nodes (222004 simplex iterations) in 85.85 seconds (179.60 work units)
+Thread count was 32 (of 32 available processors)
+
+Solution count 8: 24 24 22 ... 15
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.400000000000e+01, best bound 2.400000000000e+01, gap 0.0000%
+
+Gurobi 12.0.0 (linux64) logging started Wed 20 Nov 2024 05:50:08 PM UTC
+
+Set parameter LogFile to value "tsn_bounding10.log"
+Set parameter MIPFocus to value 1
+Set parameter Cuts to value 2
+Gurobi Optimizer version 12.0.0 build v12.0.0rc1 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: 13th Gen Intel(R) Core(TM) i9-13900K, instruction set [SSE2|AVX|AVX2]
+Thread count: 32 physical cores, 32 logical processors, using up to 32 threads
+
+Non-default parameters:
+MIPFocus  1
+Cuts  2
+LogToConsole  0
+
+Optimize a model with 456703 rows, 8605 columns and 941646 nonzeros
+Model fingerprint: 0x340184dc
+Variable types: 0 continuous, 8605 integer (8605 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 4e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+00]
+
+User MIP start did not produce a new incumbent solution
+User MIP start violates constraint SourceConsSourceNode2 by 1.000000000
+
+Presolve removed 297622 rows and 12 columns
+Presolve time: 2.76s
+Presolved: 159081 rows, 8593 columns, 469329 nonzeros
+Variable types: 0 continuous, 8593 integer (8593 binary)
+Found heuristic solution: objective 7.0000000
+Root relaxation presolved: 8593 rows, 167674 columns, 477922 nonzeros
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+   19297    7.4846421e+01   0.000000e+00   2.870211e+06      5s
+   43723    2.2011618e+01   0.000000e+00   1.842164e+05     10s
+   72397    2.1909527e+01   0.000000e+00   4.710627e+04     15s
+   88778    2.0538462e+01   0.000000e+00   0.000000e+00     17s
+   88778    2.0538462e+01   0.000000e+00   0.000000e+00     17s
+
+Root relaxation: objective 2.053846e+01, 88778 iterations, 14.42 seconds (30.77 work units)
+Another try with MIP start
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   20.53846    0   91    7.00000   20.53846   193%     -   17s
+H    0     0                       9.0000000   20.53846   128%     -   17s
+H    0     0                      13.0000000   20.53846  58.0%     -   17s
+H    0     0                      15.0000000   20.53846  36.9%     -   18s
+H    0     0                      17.0000000   20.53846  20.8%     -   18s
+     0     0   20.37808    0  153   17.00000   20.37808  19.9%     -   19s
+     0     0   20.20554    0  141   17.00000   20.20554  18.9%     -   19s
+     0     0   20.18196    0  178   17.00000   20.18196  18.7%     -   20s
+     0     0   20.18000    0  143   17.00000   20.18000  18.7%     -   20s
+H    0     0                      18.0000000   20.18000  12.1%     -   21s
+     0     0   20.17949    0  150   18.00000   20.17949  12.1%     -   21s
+     0     0   20.16997    0  186   18.00000   20.16997  12.1%     -   22s
+H    0     0                      19.0000000   20.16997  6.16%     -   23s
+     0     0   20.14173    0  187   19.00000   20.14173  6.01%     -   23s
+     0     0   20.14173    0  171   19.00000   20.14173  6.01%     -   31s
+     0     0   20.14173    0  155   19.00000   20.14173  6.01%     -   31s
+     0     0   20.14173    0  169   19.00000   20.14173  6.01%     -   31s
+     0     0   20.14173    0  175   19.00000   20.14173  6.01%     -   31s
+     0     0   20.14173    0  168   19.00000   20.14173  6.01%     -   31s
+
+Cutting planes:
+  Gomory: 2
+  Lift-and-project: 3
+  Cover: 1
+  Clique: 12
+  Zero half: 66
+  Relax-and-lift: 1
+
+Explored 1 nodes (99559 simplex iterations) in 32.35 seconds (66.13 work units)
+Thread count was 32 (of 32 available processors)
+
+Solution count 7: 19 18 17 ... 7
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.900000000000e+01, best bound 1.900000000000e+01, gap 0.0000%
+
+Gurobi 12.0.0 (linux64) logging started Wed 20 Nov 2024 05:51:21 PM UTC
+
+Set parameter LogFile to value "tsn_bounding10.log"
+Set parameter MIPFocus to value 1
+Set parameter Cuts to value 2
+Gurobi Optimizer version 12.0.0 build v12.0.0rc1 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: 13th Gen Intel(R) Core(TM) i9-13900K, instruction set [SSE2|AVX|AVX2]
+Thread count: 32 physical cores, 32 logical processors, using up to 32 threads
+
+Non-default parameters:
+MIPFocus  1
+Cuts  2
+LogToConsole  0
+
+Optimize a model with 674884 rows, 10882 columns and 1385544 nonzeros
+Model fingerprint: 0x275e191c
+Variable types: 0 continuous, 10882 integer (10882 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 3e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+00]
+
+Loaded user MIP start with objective 18
+
+Presolve removed 448700 rows and 17 columns
+Presolve time: 4.81s
+Presolved: 226184 rows, 10865 columns, 660692 nonzeros
+Variable types: 0 continuous, 10865 integer (10865 binary)
+Root relaxation presolved: 10865 rows, 237049 columns, 671557 nonzeros
+
+Deterministic concurrent LP optimizer: primal and dual simplex
+Showing primal log only...
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0820000e+03   0.000000e+00   9.321300e+04      5s
+Concurrent spin time: 0.16s (can be avoided by choosing Method=3)
+
+Solved with dual simplex
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+    3182    2.4000000e+01   0.000000e+00   0.000000e+00      6s
+
+Root relaxation: objective 2.400000e+01, 3182 iterations, 0.69 seconds (1.51 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   24.00000    0   54   18.00000   24.00000  33.3%     -    6s
+H    0     0                      20.0000000   24.00000  20.0%     -    6s
+H    0     0                      21.0000000   24.00000  14.3%     -    6s
+     0     0   24.00000    0   67   21.00000   24.00000  14.3%     -    7s
+H    0     0                      23.0000000   24.00000  4.35%     -    8s
+     0     0   23.00000    0   52   23.00000   23.00000  0.00%     -    8s
+
+Cutting planes:
+  Gomory: 1
+  Lift-and-project: 3
+  Clique: 5
+  MIR: 1
+  Zero half: 11
+
+Explored 1 nodes (5983 simplex iterations) in 8.64 seconds (17.08 work units)
+Thread count was 32 (of 32 available processors)
+
+Solution count 4: 23 21 20 18 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.300000000000e+01, best bound 2.300000000000e+01, gap 0.0000%
+
+Gurobi 12.0.0 (linux64) logging started Wed 08 Jan 2025 10:57:50 AM UTC
+
+Set parameter LogFile to value "tsn_bounding10.log"
+Set parameter MIPFocus to value 1
+Set parameter Cuts to value 2
+Gurobi Optimizer version 12.0.0 build v12.0.0rc1 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: 13th Gen Intel(R) Core(TM) i9-13900K, instruction set [SSE2|AVX|AVX2]
+Thread count: 32 physical cores, 32 logical processors, using up to 32 threads
+
+Non-default parameters:
+MIPFocus  1
+Cuts  2
+LogToConsole  0
+
+Optimize a model with 121712 rows, 4445 columns and 257436 nonzeros
+Model fingerprint: 0x24451ad7
+Variable types: 0 continuous, 4445 integer (4445 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 4e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+00]
+
+Loaded user MIP start with objective 15
+
+Presolve removed 89696 rows and 366 columns
+Presolve time: 0.73s
+Presolved: 32016 rows, 4079 columns, 115256 nonzeros
+Variable types: 0 continuous, 4079 integer (4079 binary)
+Root relaxation presolved: 32016 rows, 4079 columns, 115256 nonzeros
+
+
+Root relaxation: objective 1.770588e+01, 2682 iterations, 0.22 seconds (0.75 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   17.70588    0   73   15.00000   17.70588  18.0%     -    1s
+     0     0   17.70000    0   68   15.00000   17.70000  18.0%     -    1s
+H    0     0                      16.0000000   17.70000  10.6%     -    1s
+H    0     0                      17.0000000   17.70000  4.12%     -    1s
+
+Cutting planes:
+  Gomory: 4
+  Lift-and-project: 11
+  Cover: 1
+  Zero half: 10
+
+Explored 1 nodes (3010 simplex iterations) in 1.19 seconds (2.85 work units)
+Thread count was 32 (of 32 available processors)
+
+Solution count 3: 17 16 15 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.700000000000e+01, best bound 1.700000000000e+01, gap 0.0000%
+
+Gurobi 12.0.0 (linux64) logging started Wed 08 Jan 2025 10:58:10 AM UTC
+
+Set parameter LogFile to value "tsn_bounding10.log"
+Set parameter MIPFocus to value 1
+Set parameter Cuts to value 2
+Gurobi Optimizer version 12.0.0 build v12.0.0rc1 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: 13th Gen Intel(R) Core(TM) i9-13900K, instruction set [SSE2|AVX|AVX2]
+Thread count: 32 physical cores, 32 logical processors, using up to 32 threads
+
+Non-default parameters:
+MIPFocus  1
+Cuts  2
+LogToConsole  0
+
+Optimize a model with 425239 rows, 8538 columns and 878426 nonzeros
+Model fingerprint: 0x0f322cfa
+Variable types: 0 continuous, 8538 integer (8538 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 4e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+00]
+
+Loaded user MIP start with objective 20
+
+Presolve removed 342146 rows and 1189 columns
+Presolve time: 3.02s
+Presolved: 83093 rows, 7349 columns, 282511 nonzeros
+Variable types: 0 continuous, 7349 integer (7349 binary)
+Root relaxation presolved: 7347 rows, 90440 columns, 289858 nonzeros
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+   21096    9.6245446e+01   0.000000e+00   1.092863e+07      5s
+   58452    2.8925027e+01   0.000000e+00   4.799878e+02     10s
+   65908    2.8000000e+01   0.000000e+00   0.000000e+00     11s
+   65908    2.8000000e+01   0.000000e+00   0.000000e+00     11s
+   65908    2.8000000e+01   0.000000e+00   0.000000e+00     11s
+
+Root relaxation: objective 2.800000e+01, 65908 iterations, 7.83 seconds (16.53 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   28.00000    0   64   20.00000   28.00000  40.0%     -   11s
+H    0     0                      24.0000000   28.00000  16.7%     -   11s
+H    0     0                      27.0000000   28.00000  3.70%     -   11s
+
+Cutting planes:
+  Gomory: 1
+  Lift-and-project: 15
+  Cover: 1
+  Clique: 5
+  Zero half: 9
+
+Explored 1 nodes (67048 simplex iterations) in 11.50 seconds (25.29 work units)
+Thread count was 32 (of 32 available processors)
+
+Solution count 3: 27 24 20 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.700000000000e+01, best bound 2.700000000000e+01, gap 0.0000%
+
+Gurobi 12.0.0 (linux64) logging started Wed 08 Jan 2025 10:59:07 AM UTC
+
+Set parameter LogFile to value "tsn_bounding10.log"
+Set parameter MIPFocus to value 1
+Set parameter Cuts to value 2
+Gurobi Optimizer version 12.0.0 build v12.0.0rc1 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: 13th Gen Intel(R) Core(TM) i9-13900K, instruction set [SSE2|AVX|AVX2]
+Thread count: 32 physical cores, 32 logical processors, using up to 32 threads
+
+Non-default parameters:
+MIPFocus  1
+Cuts  2
+LogToConsole  0
+
+Optimize a model with 580825 rows, 9387 columns and 1191878 nonzeros
+Model fingerprint: 0x12f6853c
+Variable types: 0 continuous, 9387 integer (9387 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 4e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+00]
+
+User MIP start did not produce a new incumbent solution
+User MIP start violates constraint ConflictJobs15_16 by 1.000000000
+
+Presolve removed 411824 rows and 698 columns
+Presolve time: 4.06s
+Presolved: 169001 rows, 8689 columns, 502855 nonzeros
+Variable types: 0 continuous, 8689 integer (8689 binary)
+Found heuristic solution: objective 5.0000000
+Root relaxation presolved: 8687 rows, 177688 columns, 511542 nonzeros
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+    5825    2.0049214e+02   0.000000e+00   7.541139e+05      5s
+   43847    2.5846816e+01   0.000000e+00   1.335196e+06     10s
+   63587    2.5156416e+01   0.000000e+00   1.059727e+06     15s
+   84587    2.4991891e+01   0.000000e+00   2.947552e+05     20s
+  108527    2.4890685e+01   0.000000e+00   4.892077e+04     25s
+  140867    2.3681765e+01   0.000000e+00   2.102316e+04     30s
+  150374    2.3000000e+01   0.000000e+00   0.000000e+00     31s
+  150374    2.3000000e+01   0.000000e+00   0.000000e+00     31s
+  150374    2.3000000e+01   0.000000e+00   0.000000e+00     31s
+
+Root relaxation: objective 2.300000e+01, 150374 iterations, 27.19 seconds (58.84 work units)
+Another try with MIP start
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   23.00000    0   53    5.00000   23.00000   360%     -   31s
+H    0     0                      18.0000000   23.00000  27.8%     -   32s
+H    0     0                      19.0000000   23.00000  21.1%     -   32s
+H    0     0                      22.0000000   23.00000  4.55%     -   32s
+     0     0   23.00000    0   35   22.00000   23.00000  4.55%     -   32s
+
+Explored 1 nodes (152534 simplex iterations) in 32.77 seconds (71.17 work units)
+Thread count was 32 (of 32 available processors)
+
+Solution count 4: 22 19 18 5 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.200000000000e+01, best bound 2.200000000000e+01, gap 0.0000%
+
+Gurobi 12.0.0 (linux64) logging started Wed 08 Jan 2025 11:00:02 AM UTC
+
+Set parameter LogFile to value "tsn_bounding10.log"
+Set parameter MIPFocus to value 1
+Set parameter Cuts to value 2
+Gurobi Optimizer version 12.0.0 build v12.0.0rc1 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: 13th Gen Intel(R) Core(TM) i9-13900K, instruction set [SSE2|AVX|AVX2]
+Thread count: 32 physical cores, 32 logical processors, using up to 32 threads
+
+Non-default parameters:
+MIPFocus  1
+Cuts  2
+LogToConsole  0
+
+Optimize a model with 254714 rows, 6294 columns and 529798 nonzeros
+Model fingerprint: 0xb1696edc
+Variable types: 0 continuous, 6294 integer (6294 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 4e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+00]
+
+Loaded user MIP start with objective 24
+
+Presolve removed 165299 rows and 16 columns
+Presolve time: 1.29s
+Presolved: 89415 rows, 6278 columns, 270528 nonzeros
+Variable types: 0 continuous, 6278 integer (6278 binary)
+Root relaxation presolved: 6278 rows, 95693 columns, 276806 nonzeros
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+   38736    2.9035986e+01   0.000000e+00   1.996451e+05      5s
+   76237    2.7000000e+01   0.000000e+00   0.000000e+00      9s
+   76237    2.7000000e+01   0.000000e+00   0.000000e+00      9s
+
+Root relaxation: objective 2.700000e+01, 76237 iterations, 8.03 seconds (17.08 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   27.00000    0   20   24.00000   27.00000  12.5%     -    9s
+H    0     0                      25.0000000   27.00000  8.00%     -    9s
+H    0     0                      27.0000000   27.00000  0.00%     -    9s
+
+Cutting planes:
+  Gomory: 4
+  Lift-and-project: 5
+  Clique: 3
+  Zero half: 12
+
+Explored 1 nodes (77650 simplex iterations) in 9.85 seconds (21.58 work units)
+Thread count was 32 (of 32 available processors)
+
+Solution count 3: 27 25 24 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.700000000000e+01, best bound 2.700000000000e+01, gap 0.0000%
+
+Gurobi 12.0.0 (linux64) logging started Wed 08 Jan 2025 11:02:45 AM UTC
+
+Set parameter LogFile to value "tsn_bounding10.log"
+Set parameter MIPFocus to value 1
+Set parameter Cuts to value 2
+Gurobi Optimizer version 12.0.0 build v12.0.0rc1 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: 13th Gen Intel(R) Core(TM) i9-13900K, instruction set [SSE2|AVX|AVX2]
+Thread count: 32 physical cores, 32 logical processors, using up to 32 threads
+
+Non-default parameters:
+MIPFocus  1
+Cuts  2
+LogToConsole  0
+
+Optimize a model with 579641 rows, 9754 columns and 1190910 nonzeros
+Model fingerprint: 0x0581b65d
+Variable types: 0 continuous, 9754 integer (9754 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 4e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+00]
+
+User MIP start did not produce a new incumbent solution
+User MIP start violates constraint SourceConsSourceNode2 by 1.000000000
+
+Presolve removed 428513 rows and 1452 columns (presolve time = 5s)...
+Presolve removed 428512 rows and 1451 columns
+Presolve time: 5.16s
+Presolved: 151129 rows, 8303 columns, 466217 nonzeros
+Variable types: 0 continuous, 8303 integer (8303 binary)
+Found heuristic solution: objective 6.0000000
+Found heuristic solution: objective 7.0000000
+Root relaxation presolved: 8301 rows, 159430 columns, 474518 nonzeros
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.6620000e+03   0.000000e+00   1.616580e+05      5s
+   35882    1.4368437e+02   0.000000e+00   6.433835e+06     10s
+   60162    2.6930369e+01   0.000000e+00   1.338415e+06     15s
+   78933    2.6306215e+01   0.000000e+00   1.191196e+06     20s
+   98049    2.6117002e+01   0.000000e+00   5.704814e+05     25s
+  118581    2.6014983e+01   0.000000e+00   4.258898e+05     30s
+  142653    2.5952625e+01   0.000000e+00   1.435882e+05     35s
+  173451    2.5818220e+01   0.000000e+00   3.148248e+06     40s
+  192621    2.3326087e+01   0.000000e+00   0.000000e+00     43s
+  192621    2.3326087e+01   0.000000e+00   0.000000e+00     43s
+  192621    2.3326087e+01   0.000000e+00   0.000000e+00     43s
+
+Root relaxation: objective 2.332609e+01, 192621 iterations, 37.37 seconds (74.98 work units)
+Another try with MIP start
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   23.32609    0  114    7.00000   23.32609   233%     -   43s
+H    0     0                      15.0000000   23.32609  55.5%     -   43s
+H    0     0                      16.0000000   23.32609  45.8%     -   43s
+H    0     0                      18.0000000   23.32609  29.6%     -   43s
+H    0     0                      19.0000000   23.32609  22.8%     -   43s
+     0     0   22.48387    0  105   19.00000   22.48387  18.3%     -   45s
+     0     0   22.39474    0  122   19.00000   22.39474  17.9%     -   45s
+H    0     0                      20.0000000   22.27273  11.4%     -   46s
+     0     0   22.27273    0  108   20.00000   22.27273  11.4%     -   46s
+     0     0   22.27273    0  105   20.00000   22.27273  11.4%     -   46s
+     0     0   22.27273    0  105   20.00000   22.27273  11.4%     -   47s
+     0     0   22.27273    0   88   20.00000   22.27273  11.4%     -   48s
+     0     0   22.27273    0   91   20.00000   22.27273  11.4%     -   48s
+     0     0   22.27273    0   91   20.00000   22.27273  11.4%     -   48s
+     0     0   22.00000    0  114   20.00000   22.00000  10.0%     -   49s
+     0     0   22.00000    0  115   20.00000   22.00000  10.0%     -   49s
+     0     0   22.00000    0  110   20.00000   22.00000  10.0%     -   49s
+     0     0   22.00000    0  111   20.00000   22.00000  10.0%     -   49s
+     0     0   22.00000    0  107   20.00000   22.00000  10.0%     -   49s
+H    0     0                      21.0000000   22.00000  4.76%     -   52s
+     0     0   22.00000    0   34   21.00000   22.00000  4.76%     -   53s
+     0     0   22.00000    0   36   21.00000   22.00000  4.76%     -   53s
+     0     0   22.00000    0   44   21.00000   22.00000  4.76%     -   53s
+     0     0   22.00000    0   82   21.00000   22.00000  4.76%     -   54s
+     0     0   22.00000    0   91   21.00000   22.00000  4.76%     -   58s
+     0     0   22.00000    0  121   21.00000   22.00000  4.76%     -   81s
+     0     0   22.00000    0  101   21.00000   22.00000  4.76%     -   81s
+     0     0   22.00000    0  146   21.00000   22.00000  4.76%     -   82s
+     0     0   22.00000    0  128   21.00000   22.00000  4.76%     -   82s
+     0     0   22.00000    0  130   21.00000   22.00000  4.76%     -   83s
+     0     0   22.00000    0  137   21.00000   22.00000  4.76%     -   83s
+     0     0   22.00000    0  133   21.00000   22.00000  4.76%     -   83s
+     0     0   22.00000    0  128   21.00000   22.00000  4.76%     -   85s
+     0     0   22.00000    0  143   21.00000   22.00000  4.76%     -   85s
+     0     0   22.00000    0   54   21.00000   22.00000  4.76%     -   90s
+     0     0   22.00000    0   48   21.00000   22.00000  4.76%     -   90s
+     0     0   22.00000    0   34   21.00000   22.00000  4.76%     -   94s
+     0     2   22.00000    0   34   21.00000   22.00000  4.76%     -   96s
+    29    12   22.00000    8   95   21.00000   22.00000  4.76%   373  100s
+   127    18   22.00000   15   85   21.00000   22.00000  4.76%   291  105s
+   229    31   22.00000   20   90   21.00000   22.00000  4.76%   278  111s
+   346    30   22.00000   24   93   21.00000   22.00000  4.76%   287  116s
+   441    38   22.00000   27  153   21.00000   22.00000  4.76%   271  120s
+   573    30   22.00000   31   68   21.00000   22.00000  4.76%   277  126s
+   687    19   22.00000   36  149   21.00000   22.00000  4.76%   269  131s
+   781    12 infeasible   40        21.00000   22.00000  4.76%   265  135s
+   829     4 infeasible   46        21.00000   22.00000  4.76%   265  140s
+
+Cutting planes:
+  Gomory: 2
+  Cover: 1
+  Implied bound: 33
+  Clique: 20
+  Inf proof: 2
+  Zero half: 97
+  RLT: 45
+  Relax-and-lift: 54
+
+Explored 851 nodes (472121 simplex iterations) in 142.54 seconds (331.93 work units)
+Thread count was 32 (of 32 available processors)
+
+Solution count 9: 21 20 19 ... 6
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.100000000000e+01, best bound 2.100000000000e+01, gap 0.0000%
+
+Gurobi 12.0.0 (linux64) logging started Wed 08 Jan 2025 11:06:15 AM UTC
+
+Set parameter LogFile to value "tsn_bounding10.log"
+Set parameter MIPFocus to value 1
+Set parameter Cuts to value 2
+Gurobi Optimizer version 12.0.0 build v12.0.0rc1 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: 13th Gen Intel(R) Core(TM) i9-13900K, instruction set [SSE2|AVX|AVX2]
+Thread count: 32 physical cores, 32 logical processors, using up to 32 threads
+
+Non-default parameters:
+MIPFocus  1
+Cuts  2
+LogToConsole  0
+
+Optimize a model with 275733 rows, 6866 columns and 573594 nonzeros
+Model fingerprint: 0x106507e3
+Variable types: 0 continuous, 6866 integer (6866 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 4e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+00]
+
+Loaded user MIP start with objective 15
+
+Presolve removed 215473 rows and 1056 columns
+Presolve time: 1.74s
+Presolved: 60260 rows, 5810 columns, 202275 nonzeros
+Variable types: 0 continuous, 5810 integer (5810 binary)
+Root relaxation presolved: 5808 rows, 66068 columns, 208083 nonzeros
+
+
+Root relaxation: objective 1.930435e+01, 2067 iterations, 0.14 seconds (0.41 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   19.30435    0   80   15.00000   19.30435  28.7%     -    2s
+H    0     0                      16.0000000   19.30435  20.7%     -    2s
+H    0     0                      17.0000000   19.30435  13.6%     -    2s
+H    0     0                      18.0000000   19.12500  6.25%     -    2s
+     0     0   19.12500    0   79   18.00000   19.12500  6.25%     -    3s
+     0     0   19.12500    0   71   18.00000   19.12500  6.25%     -    3s
+     0     0   19.12500    0   75   18.00000   19.12500  6.25%     -    3s
+     0     0   19.07692    0   74   18.00000   19.07692  5.98%     -    3s
+     0     0   19.00000    0   68   18.00000   19.00000  5.56%     -    5s
+     0     0   19.00000    0   34   18.00000   19.00000  5.56%     -    5s
+
+Cutting planes:
+  Gomory: 2
+
+Explored 1 nodes (6637 simplex iterations) in 5.42 seconds (10.73 work units)
+Thread count was 32 (of 32 available processors)
+
+Solution count 4: 18 17 16 15 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.800000000000e+01, best bound 1.800000000000e+01, gap 0.0000%
+
+Gurobi 12.0.0 (linux64) logging started Wed 08 Jan 2025 11:06:38 AM UTC
+
+Set parameter LogFile to value "tsn_bounding10.log"
+Set parameter MIPFocus to value 1
+Set parameter Cuts to value 2
+Gurobi Optimizer version 12.0.0 build v12.0.0rc1 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: 13th Gen Intel(R) Core(TM) i9-13900K, instruction set [SSE2|AVX|AVX2]
+Thread count: 32 physical cores, 32 logical processors, using up to 32 threads
+
+Non-default parameters:
+MIPFocus  1
+Cuts  2
+LogToConsole  0
+
+Optimize a model with 299312 rows, 7227 columns and 622270 nonzeros
+Model fingerprint: 0xcf4593df
+Variable types: 0 continuous, 7227 integer (7227 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 4e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+00]
+
+Loaded user MIP start with objective 18
+
+Presolve removed 231868 rows and 1071 columns
+Presolve time: 2.29s
+Presolved: 67444 rows, 6156 columns, 231199 nonzeros
+Variable types: 0 continuous, 6156 integer (6156 binary)
+Root relaxation presolved: 6156 rows, 73600 columns, 237355 nonzeros
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+   31735    2.1073758e+01   0.000000e+00   1.969307e+05      5s
+   61237    2.0189189e+01   0.000000e+00   0.000000e+00      8s
+   61237    2.0189189e+01   0.000000e+00   0.000000e+00      8s
+
+Root relaxation: objective 2.018919e+01, 61237 iterations, 6.18 seconds (12.92 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   20.18919    0   83   18.00000   20.18919  12.2%     -    8s
+H    0     0                      20.0000000   20.18919  0.95%     -    8s
+     0     0   20.18919    0   83   20.00000   20.18919  0.95%     -    8s
+
+Explored 1 nodes (62232 simplex iterations) in 8.77 seconds (18.65 work units)
+Thread count was 32 (of 32 available processors)
+
+Solution count 2: 20 18 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.000000000000e+01, best bound 2.000000000000e+01, gap 0.0000%
+
+Gurobi 12.0.0 (linux64) logging started Wed 08 Jan 2025 11:08:26 AM UTC
+
+Set parameter LogFile to value "tsn_bounding10.log"
+Set parameter MIPFocus to value 1
+Set parameter Cuts to value 2
+Gurobi Optimizer version 12.0.0 build v12.0.0rc1 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: 13th Gen Intel(R) Core(TM) i9-13900K, instruction set [SSE2|AVX|AVX2]
+Thread count: 32 physical cores, 32 logical processors, using up to 32 threads
+
+Non-default parameters:
+MIPFocus  1
+Cuts  2
+LogToConsole  0
+
+Optimize a model with 567198 rows, 9782 columns and 1166274 nonzeros
+Model fingerprint: 0x3a3d3cdb
+Variable types: 0 continuous, 9782 integer (9782 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e+00, 4e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+00]
+
+Loaded user MIP start with objective 15
+
+Presolve removed 401809 rows and 669 columns (presolve time = 5s)...
+Presolve removed 401809 rows and 669 columns
+Presolve time: 5.52s
+Presolved: 165389 rows, 9113 columns, 499482 nonzeros
+Variable types: 0 continuous, 9113 integer (9113 binary)
+Root relaxation presolved: 9111 rows, 174500 columns, 508593 nonzeros
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    8.7400000e+02   0.000000e+00   5.266400e+04      6s
+   43410    1.3726549e+02   0.000000e+00   6.842365e+05     10s
+   77537    3.0939693e+01   0.000000e+00   1.787818e+08     15s
+   97306    2.8303329e+01   0.000000e+00   1.348899e+06     20s
+  116338    2.8100765e+01   0.000000e+00   4.785995e+05     25s
+  136102    2.7999405e+01   0.000000e+00   3.249502e+05     30s
+  160990    2.7923456e+01   0.000000e+00   1.021844e+04     35s
+  192100    2.6389482e+01   0.000000e+00   6.046655e+01     40s
+  197056    2.6294118e+01   0.000000e+00   0.000000e+00     41s
+  197056    2.6294118e+01   0.000000e+00   0.000000e+00     41s
+  197056    2.6294118e+01   0.000000e+00   0.000000e+00     41s
+
+Root relaxation: objective 2.629412e+01, 197056 iterations, 35.26 seconds (72.05 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   26.29412    0  114   15.00000   26.29412  75.3%     -   41s
+H    0     0                      18.0000000   26.29412  46.1%     -   41s
+H    0     0                      19.0000000   26.29412  38.4%     -   41s
+H    0     0                      20.0000000   26.29412  31.5%     -   42s
+H    0     0                      21.0000000   26.27273  25.1%     -   42s
+     0     0   26.00000    0  133   21.00000   26.00000  23.8%     -   43s
+H    0     0                      22.0000000   26.00000  18.2%     -   44s
+     0     0   26.00000    0  141   22.00000   26.00000  18.2%     -   44s
+     0     0   26.00000    0   97   22.00000   26.00000  18.2%     -   44s
+H    0     0                      24.0000000   26.00000  8.33%     -   49s
+     0     0   26.00000    0   34   24.00000   26.00000  8.33%     -   50s
+     0     0   26.00000    0   72   24.00000   26.00000  8.33%     -   55s
+     0     0   25.93103    0  104   24.00000   25.93103  8.05%     -   56s
+     0     0   25.87500    0   92   24.00000   25.87500  7.81%     -   60s
+
+Explored 1 nodes (222004 simplex iterations) in 86.32 seconds (179.60 work units)
+Thread count was 32 (of 32 available processors)
+
+Solution count 8: 24 24 22 ... 15
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.400000000000e+01, best bound 2.400000000000e+01, gap 0.0000%
+
+Gurobi 12.0.0 (linux64) logging started Wed 08 Jan 2025 11:10:48 AM UTC
+
+Set parameter LogFile to value "tsn_bounding10.log"
+Set parameter MIPFocus to value 1
+Set parameter Cuts to value 2
+Gurobi Optimizer version 12.0.0 build v12.0.0rc1 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: 13th Gen Intel(R) Core(TM) i9-13900K, instruction set [SSE2|AVX|AVX2]
+Thread count: 32 physical cores, 32 logical processors, using up to 32 threads
+
+Non-default parameters:
+MIPFocus  1
+Cuts  2
+LogToConsole  0
+
+Optimize a model with 456703 rows, 8605 columns and 941646 nonzeros
+Model fingerprint: 0x340184dc
+Variable types: 0 continuous, 8605 integer (8605 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 4e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+00]
+
+User MIP start did not produce a new incumbent solution
+User MIP start violates constraint SourceConsSourceNode2 by 1.000000000
+
+Presolve removed 297622 rows and 12 columns
+Presolve time: 2.84s
+Presolved: 159081 rows, 8593 columns, 469329 nonzeros
+Variable types: 0 continuous, 8593 integer (8593 binary)
+Found heuristic solution: objective 7.0000000
+Root relaxation presolved: 8593 rows, 167674 columns, 477922 nonzeros
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+   19651    2.8576670e+01   0.000000e+00   2.396448e+08      5s
+   44077    2.2009530e+01   0.000000e+00   2.646287e+05     10s
+   73105    2.1907605e+01   0.000000e+00   3.709303e+03     15s
+   88778    2.0538462e+01   0.000000e+00   0.000000e+00     17s
+   88778    2.0538462e+01   0.000000e+00   0.000000e+00     17s
+
+Root relaxation: objective 2.053846e+01, 88778 iterations, 14.32 seconds (30.77 work units)
+Another try with MIP start
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   20.53846    0   91    7.00000   20.53846   193%     -   17s
+H    0     0                       9.0000000   20.53846   128%     -   17s
+H    0     0                      13.0000000   20.53846  58.0%     -   17s
+H    0     0                      15.0000000   20.53846  36.9%     -   17s
+H    0     0                      17.0000000   20.53846  20.8%     -   17s
+     0     0   20.37808    0  153   17.00000   20.37808  19.9%     -   19s
+     0     0   20.20554    0  141   17.00000   20.20554  18.9%     -   19s
+     0     0   20.18196    0  178   17.00000   20.18196  18.7%     -   20s
+     0     0   20.18000    0  143   17.00000   20.18000  18.7%     -   20s
+H    0     0                      18.0000000   20.18000  12.1%     -   21s
+     0     0   20.17949    0  150   18.00000   20.17949  12.1%     -   21s
+     0     0   20.16997    0  186   18.00000   20.16997  12.1%     -   22s
+H    0     0                      19.0000000   20.16997  6.16%     -   23s
+     0     0   20.14173    0  187   19.00000   20.14173  6.01%     -   23s
+     0     0   20.14173    0  171   19.00000   20.14173  6.01%     -   30s
+     0     0   20.14173    0  155   19.00000   20.14173  6.01%     -   30s
+     0     0   20.14173    0  169   19.00000   20.14173  6.01%     -   30s
+     0     0   20.14173    0  175   19.00000   20.14173  6.01%     -   30s
+     0     0   20.14173    0  168   19.00000   20.14173  6.01%     -   30s
+
+Cutting planes:
+  Gomory: 2
+  Lift-and-project: 3
+  Cover: 1
+  Clique: 12
+  Zero half: 66
+  Relax-and-lift: 1
+
+Explored 1 nodes (99559 simplex iterations) in 31.92 seconds (66.13 work units)
+Thread count was 32 (of 32 available processors)
+
+Solution count 7: 19 18 17 ... 7
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.900000000000e+01, best bound 1.900000000000e+01, gap 0.0000%
+
+Gurobi 12.0.0 (linux64) logging started Wed 08 Jan 2025 11:12:00 AM UTC
+
+Set parameter LogFile to value "tsn_bounding10.log"
+Set parameter MIPFocus to value 1
+Set parameter Cuts to value 2
+Gurobi Optimizer version 12.0.0 build v12.0.0rc1 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: 13th Gen Intel(R) Core(TM) i9-13900K, instruction set [SSE2|AVX|AVX2]
+Thread count: 32 physical cores, 32 logical processors, using up to 32 threads
+
+Non-default parameters:
+MIPFocus  1
+Cuts  2
+LogToConsole  0
+
+Optimize a model with 674884 rows, 10882 columns and 1385544 nonzeros
+Model fingerprint: 0x275e191c
+Variable types: 0 continuous, 10882 integer (10882 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 3e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+00]
+
+Loaded user MIP start with objective 18
+
+Presolve removed 448700 rows and 17 columns
+Presolve time: 4.19s
+Presolved: 226184 rows, 10865 columns, 660692 nonzeros
+Variable types: 0 continuous, 10865 integer (10865 binary)
+Root relaxation presolved: 10865 rows, 237049 columns, 671557 nonzeros
+
+Deterministic concurrent LP optimizer: primal and dual simplex
+Showing primal log only...
+
+Concurrent spin time: 0.16s (can be avoided by choosing Method=3)
+
+Solved with dual simplex
+
+Root relaxation: objective 2.400000e+01, 3182 iterations, 0.69 seconds (1.51 work units)
+Total elapsed time = 5.21s (DegenMoves)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   24.00000    0   54   18.00000   24.00000  33.3%     -    5s
+H    0     0                      20.0000000   24.00000  20.0%     -    5s
+H    0     0                      21.0000000   24.00000  14.3%     -    5s
+     0     0   24.00000    0   67   21.00000   24.00000  14.3%     -    6s
+H    0     0                      23.0000000   24.00000  4.35%     -    7s
+     0     0   23.00000    0   52   23.00000   23.00000  0.00%     -    8s
+
+Cutting planes:
+  Gomory: 1
+  Lift-and-project: 3
+  Clique: 5
+  MIR: 1
+  Zero half: 11
+
+Explored 1 nodes (5983 simplex iterations) in 8.03 seconds (17.08 work units)
+Thread count was 32 (of 32 available processors)
+
+Solution count 4: 23 21 20 18 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.300000000000e+01, best bound 2.300000000000e+01, gap 0.0000%
