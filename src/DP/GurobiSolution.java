@@ -503,24 +503,24 @@ public class GurobiSolution {
 		if (cc.job != null) {
 			if (cc.crane.id == 1) {
 				int craneLoc = cc.job.toColumn;
-				estimatedTtFromInit = Math.abs(craneLoc - (taskCentroids[0] * estimatedInitRatio[0]))
+				estimatedTtFromInit = estimatedInitRatio[0] * Math.abs(craneLoc - taskCentroids[0])
 						/ problem.speedInColumnsPerTimeUnit;
 			}
 
 			else {
 				int craneLoc = cc.job.toColumn;
-				estimatedTtFromInit = Math.abs(craneLoc - (taskCentroids[1] * estimatedInitRatio[1]))
+				estimatedTtFromInit = estimatedInitRatio[1] * Math.abs(craneLoc - taskCentroids[1])
 						/ problem.speedInColumnsPerTimeUnit;
 			}
 		} else {
 			int craneLoc = cc.crane.initColumn;
 
 			if (cc.crane.id == 1) {
-				estimatedTtFromInit = Math.abs(craneLoc - (taskCentroids[0] * estimatedInitRatio[0]))
+				estimatedTtFromInit = estimatedInitRatio[0] * Math.abs(craneLoc - taskCentroids[0])
 						/ problem.speedInColumnsPerTimeUnit;
 
 			} else {
-				estimatedTtFromInit = Math.abs(craneLoc - (taskCentroids[1] * estimatedInitRatio[1]))
+				estimatedTtFromInit = estimatedInitRatio[1] * Math.abs(craneLoc - taskCentroids[1])
 						/ problem.speedInColumnsPerTimeUnit;
 			}
 		}
